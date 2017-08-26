@@ -11,7 +11,7 @@ The purpose of this proxy server is to help getting started with performing tran
   
 ## Prerequisites
 
- Download [NodeJS](https://nodejs.org/en/download/)
+  Download and install [NodeJS](https://nodejs.org/en/download/)
 
 
 ## Instructions
@@ -22,13 +22,19 @@ The purpose of this proxy server is to help getting started with performing tran
   git clone https://github.com/TimSamshuijzen/iotaproxy
   ```
 
-2. Run npm install:
+2. Enter the "iotaproxy" directory:
+
+  ```
+  cd iotaproxy
+  ```
+
+3. Install dependencies:
 
   ```
   npm install
   ```
 
-3. Edit index.js to set preferred connection settings:
+4. Edit index.js to set preferred connection settings. For example:
 
   ```
   var iotaProxy = require('./lib/iotaproxy.js');
@@ -42,13 +48,13 @@ The purpose of this proxy server is to help getting started with performing tran
   );
   ```
 
-4. Run the proxy server:
+5. Run the proxy server:
 
   ```
   node index.js
   ```
 
-5. Proxy server is now ready to use. It will start off displaying this in the console:
+6. Proxy server is now ready to use. It will start off displaying this in the console:
 
   ```
   IOTA proxy server started
@@ -56,7 +62,7 @@ The purpose of this proxy server is to help getting started with performing tran
   Relaying requests to iota.bitfinex.com:80  
   ```
 
-6. Now, in your own iota.lib.js project you can connect to your local proxy server, which in turn connects with the tangle:
+7. Now, in your own iota.lib.js project you can connect to your local proxy server, which in turn connects with the tangle:
 
   ```
   var IOTA = require('iota.lib.js');
