@@ -6,7 +6,7 @@ This light weight server will proxy/relay all incoming requests to public nodes 
   
 Many developers getting to know [iota.lib.js](https://github.com/iotaledger/iota.lib.js) in Node, will have experienced the
 "_COMMAND attachToTangle is not available on this node_" response after calling iota.api.sendTransfer().
-Some others may have experienced the same error message when calling the REST API [attachToTangle command](https://iota.readme.io/docs/attachtotangle).
+Some others may have experienced the same error message when calling the REST API [attachToTangle](https://iota.readme.io/docs/attachtotangle) command.
 The attachToTangle command performs the PoW that is necessary when doing a transaction.
   
 Most public full nodes in the IOTA network do not support the [attachToTangle](https://iota.readme.io/docs/attachtotangle) command.
@@ -82,7 +82,7 @@ Another use for this proxy server is when you want to offload PoW from low power
   Relaying requests to iota.bitfinex.com:80  
   ```
 
-7. Now, in your own iota.lib.js project you can connect to your local proxy server, which in turn connects with the tangle:
+7. Now, in your [iota.lib.js](https://github.com/iotaledger/iota.lib.js) project you can simply connect to this local proxy server, which in turn connects with the tangle:
 
   ```
   var IOTA = require('iota.lib.js');
