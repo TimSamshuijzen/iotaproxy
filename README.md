@@ -1,8 +1,8 @@
 
 # IOTA Proxy
 
-A simple light weight proxy server that 'mimics' a full IOTA node, supporting the attachToTangle command (PoW).
-It proxies/relays all incoming requests to public nodes in the tangle network, but intercepts the attachToTangle command and performs the PoW locally.  
+A simple proxy server for the [IOTA](https://iota.org) tangle network, supporting the attachToTangle command (PoW).
+This light weight server will proxy/relay all incoming requests to public nodes in the tangle network, but intercepts the attachToTangle commands and performs the PoW locally.  
   
 Many developers getting to know [iota.lib.js](https://github.com/iotaledger/iota.lib.js) in Node, will have experienced the
 "_COMMAND attachToTangle is not available on this node_" response after calling iota.api.sendTransfer().
