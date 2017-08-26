@@ -11,7 +11,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "ffi": "^2.2.0",
-    "iota.lib.js": "^0.3.8"
+    "ffi": "^2.2.0"
   }
 }
