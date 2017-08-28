@@ -93,4 +93,8 @@ Another use for this proxy server is when you want to offload PoW from low power
   });
   ```
 
+  
+---
 
+Donate  
+FGKKWEDSCIVCU9PZJXYBIWKCEFWLMRXSFKYMTBXFDCTUDV9SVKTNKUFNYCZUQEVDMBL9PPFRYUPFDNGY9DIIAIHKKA
