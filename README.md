@@ -71,7 +71,7 @@ Another use for this proxy server is when you want to offload PoW from low power
 5. Run the proxy server:
 
   ```
-  node index.js
+  node --harmony index.js
   ```
 
 6. Proxy server is now ready to use. It will start off displaying this in the console:
