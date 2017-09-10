@@ -2,27 +2,29 @@
 # IOTA Proxy
 
 A simple proxy server for the [IOTA](https://iota.org) tangle network, supporting the attachToTangle command (PoW).
-This light weight server will proxy/relay all incoming requests to a public node in the tangle network, but intercepts the attachToTangle commands and performs the PoW locally.
+This light weight server will proxy/relay all incoming requests to a public node in the tangle network, but intercepts the attachToTangle command and performs the PoW locally.
 
 Developers getting to know [iota.lib.js](https://github.com/iotaledger/iota.lib.js) in Node.js may have experienced the
 "_COMMAND attachToTangle is not available on this node_" response after calling iota.api.sendTransfer().
 Some others may have experienced the same error message when calling the REST API [attachToTangle](https://iota.readme.io/docs/attachtotangle) command.
 The attachToTangle command is a request to perform the PoW that is necessary when doing a transaction.  
   
-Most public full nodes in the IOTA network do not support the [attachToTangle](https://iota.readme.io/docs/attachtotangle) command.
+Most public full nodes in the IOTA network do not support the [attachToTangle](https://iota.readme.io/docs/attachtotangle) command.  
 By design it is expected that you do the PoW locally on your device, the network is not required to do this for you.  
 
 If you're looking an easy way to do PoW, then this proxy server might help.  
 Use this proxy server when you want to offload PoW.  
 
-If this does not work for you, then you can look at some of the methods provided by the IOTA foundation in their [repository](https://github.com/iotaledger).  
+Feel free to edit or fork!  
+
+If this does proxy server is not what you are looking for, then you can look at some of the methods provided by the IOTA foundation in their [repository](https://github.com/iotaledger).  
 Some examples of solutions provided by the IOTA foundation:  
 
 * Do PoW in [WebGL2-enabled browsers](https://github.com/iotaledger/curl.lib.js).
 * To do PoW in Node.js, combine solutions from [ccurl.interface.js](https://github.com/iotaledger/ccurl.interface.js)
 and [ccurl](https://github.com/iotaledger/ccurl.git), and override the iota.api.attachToTangle method in
 [iota.lib.js](https://github.com/iotaledger/iota.lib.js).
-* Install and run your own full IOTA node, configured to grant you access to the attachToTangle command.
+* Install and run your own full IOTA node, configured to grant you access to the attachToTangle command.  
 
 ---
 
