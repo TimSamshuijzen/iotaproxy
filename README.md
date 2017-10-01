@@ -82,7 +82,8 @@ and [ccurl](https://github.com/iotaledger/ccurl.git), and override the iota.api.
 
   ```
   IOTA proxy server started
-  Listing on port 14265
+  POW timeout is set to 15 min
+  Listening on port 14265
   Relaying requests to iota.bitfinex.com:80  
   ```
 
