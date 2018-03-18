@@ -16,7 +16,7 @@ iotaProxy.start(
     provider: '', // in the format "https://field.carriota.com:443"
     host: 'iota.bitfinex.com', // the remote iri hostname
     port: 80, // the port the remote iri is litening on
-    protocol: '',
+    protocol: 'http:',
     localPort: 14265,
     overrideAttachToTangle: true,
     timeout: 15
