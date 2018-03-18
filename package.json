@@ -4,7 +4,8 @@
   "description": "Simple IOTA Proxy server with attachToTangle/PoW support",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"no test specified\" && exit 1"
+    "test": "echo \"no test specified\" && exit 1",
+    "start": "node --harmony index.js"
   },
   "author": {
     "name": "Tim Samshuijzen"
